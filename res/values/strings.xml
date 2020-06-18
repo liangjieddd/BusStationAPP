@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BusCheck</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="city_title">请输入城市：</string>
+    <string name="city_hint">太原</string>
+    <string name="bus_title">请输入公交：</string>
+    <string name="search">搜索</string>
+    <string name="home_title">公交查询</string>
+    <string name="cancel">取消</string>
+    <string name="title_activity_map_show">MapShowActivity</string>
+
+</resources>

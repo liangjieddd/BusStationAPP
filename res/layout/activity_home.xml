@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/homr_bg">
+    <TextView 
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textSize="25sp"
+            android:text="@string/home_title"
+            />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView 
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:text="@string/city_title"
+            />
+        <EditText
+            android:id="@+id/et_city_input"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/city_hint"
+            android:textSize="18sp" />        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+        <TextView 
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:text="@string/bus_title"/>
+        <EditText
+            android:id="@+id/et_bus"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="18sp" />        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_check"
+            android:layout_width="66dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="10dp"
+            android:text="所处位置" />
+
+        <Button
+            android:id="@+id/btn_near"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="10dp"
+            android:text="附近公交" />
+        
+     <Button 
+        android:id="@+id/btn_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:text="@string/search"
+        android:layout_gravity="center_horizontal"
+        />
+    <Button 
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:layout_gravity="center_horizontal"
+        />
+    
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:gravity="center"
+            android:text="查询结果"
+            android:textSize="25sp" />
+    </LinearLayout>
+    
+     <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+     <ListView 
+        android:id="@+id/lv_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        ></ListView></LinearLayout>
+
+</LinearLayout>
